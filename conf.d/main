@@ -38,7 +38,7 @@ cat > /etc/drush/drushrc.php << EOF
 EOF
 
 # download latest drupal8 and install
-drush dl --dev drupal-8 --destination=$(dirname $WEBROOT)
+drush dl drupal-8.0.x --destination=$(dirname $WEBROOT)
 mv $(dirname $WEBROOT)/drupal-8* $WEBROOT
 
 SETTINGS=$WEBROOT/sites/default/settings.php
